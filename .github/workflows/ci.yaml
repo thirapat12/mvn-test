@@ -15,4 +15,7 @@ jobs:
           java-version: '23'
           distribution: 'corretto'
       - name: Run the Maven verify phase
-        run: mvn clean package
+        run: |
+          java -version
+          mvn --version
+          mvn clean package
